@@ -28,3 +28,11 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
+
+    - name: Build and Push Docker Image
+      uses: docker/login-action@v3
+        with:
+          image: docker-hub-repo/image-name
+          registry: docker.io
+          username: ${{ vars.DOCKERHUB_USERNAME }}
+          password: ${{ secrets.DOCKERHUB_TOKEN }}
