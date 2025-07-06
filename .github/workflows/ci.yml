@@ -28,15 +28,13 @@ jobs:
 
     - name: Build with Gradle
       run: ./gradlew build
-
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v3
       
-    - name: Build and push
-      uses: docker/build-push-action@v6
+    - name: Build and push Docker image
+      uses: docker/build-push-action@v5
       with:
+        context: .
         push: true
-        tags: user/app:latest
+        tags: your-dockerhub-username/your-image-name:latest
         image: paparazzi94/demo-app
         registry: docker.io
         username: ${{ secrets.DOCKERHUB_USERNAME }}
