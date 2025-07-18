@@ -59,5 +59,4 @@ In .github/workflows/ci.yml, update:
 
 ## Screenshot
 This shows the docker image in my private dockerhub repo (you can also click the link under project overview)
-![App Screenshot](Images/docker_screenshot.png)
-
+![App Screenshot](Images/Docker_screenshot.png)
