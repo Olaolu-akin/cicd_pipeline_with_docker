@@ -56,3 +56,7 @@ Ensure your build.gradle uses a Java version compatible with your environment (e
 In .github/workflows/ci.yml, update:
     The java-version
     The build steps as needed based on your environment or pipeline goals
+
+## Screenshot
+This shows the docker image in my private dockerhub repo (you can also click the link under project overview)
+![App Screenshot](Images/docker_screenshot.png)
